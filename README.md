@@ -49,6 +49,38 @@ The assistant acts like a **personal AI tutor**, enhancing self-study, revision,
 
 ---
 
+### 🧪 Gen AI Capabilities Demonstration
+
+Below are real examples showing how the assistant leverages different Gen AI techniques:
+
+---
+
+#### 1️⃣ Document Understanding - Summarization
+
+This shows how the assistant summarizes complex academic content into simple, student-friendly language.
+
+![Summary Demo](./Summary_Demo.png)
+
+---
+
+#### 2️⃣ Few-Shot Prompting - Learning from Examples
+
+By providing a few examples, the assistant learns the expected style and format for responses.
+
+![Fewshot Demo](./Fewshot_Demo.png)
+
+---
+
+#### 3️⃣ Function Calling - Performing Tasks like Calculations
+
+The assistant can perform calculations by calling simple functions, making it smarter than just a chatbot.
+
+![Function Demo](./Functioncall_Demo.png)
+
+
+
+---
+
 ## 4. Solution Architecture ⚙️
 
 - User inputs academic content via notebook or Streamlit interface.
