@@ -1,109 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# # AI-Powered Study Assistant using Gemini API 🚀
-# ---
-
-# # 1. Project Description 📘 :-
-# This project is an **AI-powered Study Assistant** that uses Generative AI models from Google to simplify and summarize complex educational content. While many models are available, we preferred **Gemini 1.5 Pro for** its balanced performance in understanding and generating content. The assistant demonstrates capabilities like **document understanding, few-shot prompting, and function calling,** making learning easier and more interactive for students.
-# 
-# ### **The assistant can :-**
-# <ul>
-# <li>Summarize complex study material into student-friendly language.</li> 
-# <li>Learn from examples to improve response style (few-shot prompting).</li>
-# <li>Perform mathematical operations via tool/function calling.</li>
-# 
-# <br>
-# <br>
-# <br>
-# 
-# ---
-
-# # 2. Problem Statement / Use Case  ❓ :-
-# Students often struggle to understand long, complex academic content and require simplified summaries to grasp the core concepts.
-# 
-# ## 💡 **This project solves that by** :-
-# <ul>
-# <li>Allowing users to input academic text and get clear, simplified summaries.</li>
-# <li>Using AI to mimic tutor-like responses through examples.</li>
-# <li>Performing supportive tasks like mathematical calculations using AI functions.</li>
-# </ul>
-# It acts like a personal AI tutor capable of enhancing self-study, revision, and content understanding for learners.
-# 
-# <br>
-# <br>
-# <br>
-# <br>
-# 
-# ---
-
-# # 3. Gen AI Used 🔍 :- 
-# 
-# 
-# **Document Understanding** – Summarized and simplified study content.<br>
-# **Few-Shot Prompting** – Used examples to guide the model’s output.<br>
-# **Function Calling** – Model performed tasks like calculating averages.<br>
-# ##### We also used Gemini 1.5 Pro for better reasoning and token handling.
-# 
-# <br>
-# <br>
-# 
-# ---
-# 
-# 
-
-# # 4. Solution Architecture ⚙️ :- 
-# <ul>
-#     <li>Input is taken from the user.</li>
-#     <li>Passed to Gemini model via API.</li>
-#     <li>Model processes the prompt and generates output.</li>
-#     <li>Output is displayed in notebook or Streamlit app.</li>
-#     <li>API key managed securely using variables.</li>
-# </ul>
-# 
-# <br>
-# <br>
-# 
-# ---
-
-# # 5. Tech Stack 💻 :-
-# 
-# **Language**    :- Python <br>
-# **Model**       :- Gemini 1.5 Pro <br>
-# **Environment** :- Kaggle Notebook <br>
-# **Deployment**  :- Streamlit <br>
-# **Library**     :- google-generativeai
-# 
-# <br>
-# <br>
-# 
-# ---
-
-# # 6. Limitations & Future Scope 🔧 :- 
-# 
-# ## 💡 Limitations :-
-# <ul>
-# <li>API usage limit.</li>
-# <li>Depends on prompt quality.</li>
-# <li>Exposing API key is risky.</li>
-# </ul>
-# 
-# 
-# ## 💡 Future Scope :-
-# <ul>
-# <li>Add image/text input support.</li>
-# <li>Improve user interface.</li>
-# <li>Secure deployment with authentication.</li>
-# </ul>
-# 
-
-# In[ ]:
-
-
-# This Python 3 environment comes with many helpful analytics libraries installed
-# It is defined by the kaggle/python Docker image: https://github.com/kaggle/docker-python
-# For example, here's several helpful packages to load
-
 import numpy as np 
 import pandas as pd 
 
@@ -165,12 +59,12 @@ for dirname, _, filenames in os.walk('/kaggle/input'):
 import google.generativeai as genai
 
 
-# REPLACE THIS WITH YOUR ACTUAL API KEY 
-api_key = "AIzaSyBTS4YELXvbmpZEQFUuLQJakYJrJeGaCro"
+# INSERT HERE YOUR OWN API KEY 
+api_key = ""
 
 
 # Configure Gemini
-genai.configure(api_key=api_key)
+ genai.configure(api_key=api_key)
 # This connects the Gemini SDK to your API key
 
 
@@ -198,7 +92,7 @@ model = genai.GenerativeModel('gemini-pro')
 
 
 # DON'T FORGET TO INSERT YOUR ACTUAL API KEY HERE 
-genai.configure(api_key="AIzaSyBTS4YELXvbmpZEQFUuLQJakYJrJeGaCro") 
+genai.configure(api_key="") 
 
 
 # **genai.configure(...)** :- This sets up the connection to Google’s AI services.
@@ -222,7 +116,7 @@ import google.generativeai as genai
 
 
 # DON'T FORGET TO INSERT YOUR ACTUAL API KEY HERE 
-genai.configure(api_key="AIzaSyBTS4YELXvbmpZEQFUuLQJakYJrJeGaCro")
+genai.configure(api_key="")
 
 
 # To check available models
@@ -244,7 +138,7 @@ for m in genai.list_models():
 import google.generativeai as genai
 
 # Step 1: INSERT YOUR ACTUAL API KEY HERE 
-genai.configure(api_key="AIzaSyBTS4YELXvbmpZEQFUuLQJakYJrJeGaCro")
+genai.configure(api_key="")
 # Authenticates you with Google’s Generative AI service using your API key.
 
 
@@ -291,7 +185,7 @@ print(response.text)   #response.text contains the summary that the model genera
 import google.generativeai as genai
 
 # Insert your actual API key
-genai.configure(api_key="AIzaSyBTS4YELXvbmpZEQFUuLQJakYJrJeGaCro")
+genai.configure(api_key="")
 
 # Choose the model
 model = genai.GenerativeModel(model_name="models/gemini-1.5-pro")
@@ -336,7 +230,7 @@ print(response.text)
 import google.generativeai as genai
 
 # Insert your actual API key
-genai.configure(api_key="AIzaSyBTS4YELXvbmpZEQFUuLQJakYJrJeGaCro")
+genai.configure(api_key="")
 
 # Choose the model
 model = genai.GenerativeModel(model_name="models/gemini-1.5-pro")
@@ -361,18 +255,6 @@ def function_call_example():
 function_call_example()
 
 
-# --- 
-# 
-# # 7. Conclusion ✅ :-
-# 
-# This project showcases how Generative AI can efficiently **summarize content, follow examples, and automate tasks using simple API calls**. By utilizing models like Gemini 1.5 Pro, we demonstrated scalable, real-world applications with secure API handling. The solution is adaptable for various use cases, providing a strong foundation for **future AI-driven automation**.
-# 
-# <br>
-# 
-# ---
-
-
-
 # --- STREAMLIT DEPLOYMENT ---
 import streamlit as st
 import google.generativeai as genai
@@ -388,7 +270,7 @@ st.markdown("This app uses **Gemini 1.5 Pro** to simplify and summarize your stu
 user_input = st.text_area("✏️ Enter your academic text here:", height=250)
 
 # Set your API key (use st.secrets in production)
-genai.configure(api_key="AIzaSyBTS4YELXvbmpZEQFUuLQJakYJrJeGaCro")
+genai.configure(api_key="")
 model = genai.GenerativeModel(model_name="models/gemini-1.5-pro")
 
 # Generate summary on button click
