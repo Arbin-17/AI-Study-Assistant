@@ -102,7 +102,7 @@ The assistant can perform calculations by calling simple functions, making it sm
 
 ---
 
-💡 Limitations:
+## 6. Limitations 💡
 - API has daily usage limits depending on your key's quota.
 - Output quality depends on the clarity and quality of prompts.
 - Exposing the API key publicly is a major security risk.
@@ -111,6 +111,15 @@ The assistant can perform calculations by calling simple functions, making it sm
 
 ---
 
-## 7. Conclusion ✅
+## 7. Future Scope 🔮
+- Add support for image and text input to make the assistant multimodal.
+- Improve the user interface for a more intuitive and engaging experience.
+- Implement secure deployment methods with authentication and access control.
+- Enable saving and exporting of generated summaries for offline use.
+
+
+---
+
+## 8. Conclusion ✅
 
 This project showcases how Generative AI can efficiently summarize content, follow examples, and automate tasks using simple API calls. By utilizing models like **Gemini 1.5 Pro**, we demonstrated scalable, real-world applications with secure API handling. The solution is adaptable for various use cases, providing a strong foundation for future AI-driven automation.
