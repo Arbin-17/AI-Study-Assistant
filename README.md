@@ -1,5 +1,8 @@
 # AI-Powered Study Assistant using Gemini API 🚀
 
+![App Screenshot](./Screenshot.png "This is a demo screenshot of the AI Assistant")
+
+
 ## 1. Project Description 📘
 
 This project is an AI-powered Study Assistant that uses Generative AI models from Google to simplify and summarize complex educational content. While many models are available, we preferred **Gemini 1.5 Pro** for its balanced performance in understanding and generating content.
