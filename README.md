@@ -15,17 +15,29 @@ This project is an AI-powered Study Assistant that uses Generative AI models fro
 ---
 
 ## 2. Problem Statement / Use Case ❓
+Students often struggle to understand long, complex academic content and require simplified summaries to grasp the core concepts. This project provides a **solution** to that challenge by making complex information easier to digest.
 
-Students often struggle to understand long, complex academic content and require simplified summaries to grasp the core concepts.
+💡 **How does this project solve the problem?**  
+- **Simplified Summaries**: The assistant allows users to input academic text and get clear, simplified summaries that focus on the key ideas.
+- **Tutor-like Responses**: By learning from examples, the AI can simulate a tutor and answer questions or explain concepts in an easy-to-understand way.
+- **Mathematical Operations**: The model can perform basic calculations, helping students understand problems that require mathematical reasoning.
 
-### 💡 This project solves that by:
-- Allowing users to input academic text and get clear, simplified summaries.
-- Using AI to mimic tutor-like responses through examples.
-- Performing supportive tasks like mathematical calculations using AI functions.
+The assistant acts like a **personal AI tutor**, enhancing self-study, revision, and content understanding for students.
 
-📚 It acts like a personal AI tutor capable of enhancing self-study, revision, and content understanding for learners.
 
 ---
+
+### ✨ Features of the Assistant
+
+- 📚 Simplifies long and complex study material into student-friendly summaries.
+- 🧠 Learns from user-given examples to enhance its responses (few-shot prompting).
+- ➗ Performs basic mathematical operations through AI-powered function calling.
+- 🔁 Provides consistent and structured responses using templates/prompts.
+- 📌 Works seamlessly with Python.
+
+
+---
+
 
 ## 3. Gen AI Used 🔍
 
@@ -39,11 +51,12 @@ Students often struggle to understand long, complex academic content and require
 
 ## 4. Solution Architecture ⚙️
 
-1. Input is taken from the user.
-2. Passed to Gemini model via API.
-3. Model processes the prompt and generates output.
-4. Output is displayed in notebook or Streamlit app.
-5. API key managed securely using variables.
+- User inputs academic content via notebook or Streamlit interface.
+- The content is sent to Gemini 1.5 Pro using the Google Generative AI API.
+- The model processes the prompt and returns a simplified summary.
+- Output is then displayed to the user.
+- API keys are securely managed using environment variables.
+
 
 ---
 
@@ -57,17 +70,12 @@ Students often struggle to understand long, complex academic content and require
 
 ---
 
-## 6. Limitations & Future Scope 🔧
+💡 Limitations:
+- API has daily usage limits depending on your key's quota.
+- Output quality depends on the clarity and quality of prompts.
+- Exposing the API key publicly is a major security risk.
+- Requires internet connection and API access for each run.
 
-### 💡 Limitations:
-- API usage limit.
-- Depends on prompt quality.
-- Exposing API key is risky.
-
-### 🚀 Future Scope:
-- Add image/text input support.
-- Improve user interface.
-- Secure deployment with authentication.
 
 ---
 
